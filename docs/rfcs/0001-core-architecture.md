@@ -1,6 +1,7 @@
 # RFC 0001: Core Architecture and Vision for external-edge
 
 **Author:** Andrew Hay
+
 **Status:** Draft
 
 ## 1. Summary
