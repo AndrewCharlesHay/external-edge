@@ -15,7 +15,7 @@ When a platform team provisions a new tenant dynamically (e.g., using Envoy Gate
 2. An Edge Proxy configuration (TLS certificate provisioning, Origin SNI override to route traffic to the correct Envoy backend)
 3. An Edge Security policy (WAF ruleset, Rate Limiting)
 
-Currently, `external-dns` handles step 1 perfectly. However, attempts to manage steps 2 and 3 within `external-dns` are routinely rejected as out-of-scope (e.g., Issue #5537, PR #6211), forcing teams to build fragmented, vendor-specific workarounds. `external-edge` exists to cleanly separate these concerns, giving Edge Proxy and Edge Security configurations a first-class home in Kubernetes.
+Currently, `external-dns` handles step 1 perfectly. However, attempts to manage steps 2 and 3 within `external-dns` are routinely rejected as out-of-scope (e.g., Issue [#5537](https://github.com/kubernetes-sigs/external-dns/issues/5537), PR [#6211](https://github.com/kubernetes-sigs/external-dns/pull/6211)), forcing teams to build fragmented, vendor-specific workarounds. `external-edge` exists to cleanly separate these concerns, giving Edge Proxy and Edge Security configurations a first-class home in Kubernetes.
 
 ## 3. Goals
 * Provide a unified CRD interface for configuring Edge Routing (Custom Hostnames, SNI) and Edge Security (WAF).
